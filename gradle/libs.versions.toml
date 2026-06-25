@@ -10,7 +10,7 @@ constraintlayout = "2.2.1"
 activityKtx = "1.13.0"
 navigationFragmentKtx = "2.9.8"
 navigationUiKtx = "2.9.8"
-room = "2.6.1"
+room = "2.8.4"
 playServicesWearable = "19.0.0"
 ksp = "2.1.10-1.0.29"
 
