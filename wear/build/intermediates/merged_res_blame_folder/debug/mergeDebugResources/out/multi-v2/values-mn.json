@@ -4,24 +4,24 @@
             "outputFile": "com.example.myapplication.wear-mergeDebugResources-21:/values-mn/values-mn.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\eed4d1fa6f1591c210292550f2f04828\\transformed\\wear-1.4.0\\res\\values-mn\\values-mn.xml",
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\5af504b6040b1ae423cd9d2a32cd29b1\\transformed\\play-services-basement-18.4.0\\res\\values-mn\\values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,166,291,405,518",
-                        "endColumns": "110,124,113,112,117",
-                        "endOffsets": "161,286,400,513,631"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "145",
+                        "endOffsets": "340"
                     },
                     "to": {
-                        "startLines": "27,28,29,31,32",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "3005,3116,3241,3456,3569",
-                        "endColumns": "110,124,113,112,117",
-                        "endOffsets": "3111,3236,3350,3564,3682"
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1798",
+                        "endColumns": "149",
+                        "endOffsets": "1943"
                     }
                 },
                 {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\7984fca06b73ca85277716fe6cb9f27e\\transformed\\play-services-base-18.5.0\\res\\values-mn\\values.xml",
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\35096c3c1619112a63429a1064ff994a\\transformed\\play-services-base-18.5.0\\res\\values-mn\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\0ccead6375ef524f7bb7fc298c07936f\\transformed\\core-1.19.0\\res\\values-mn\\values-mn.xml",
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\2b3093b2f43df11bf9291c531719b112\\transformed\\core-1.19.0\\res\\values-mn\\values-mn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -55,20 +55,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\be5416f28d51c5598e9b5d4d41e22474\\transformed\\play-services-basement-18.4.0\\res\\values-mn\\values.xml",
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\02384b026396cbea94f109607050b2d7\\transformed\\wear-1.4.0\\res\\values-mn\\values-mn.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "145",
-                        "endOffsets": "340"
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,166,291,405,518",
+                        "endColumns": "110,124,113,112,117",
+                        "endOffsets": "161,286,400,513,631"
                     },
                     "to": {
-                        "startLines": "17",
-                        "startColumns": "4",
-                        "startOffsets": "1798",
-                        "endColumns": "149",
-                        "endOffsets": "1943"
+                        "startLines": "27,28,29,31,32",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "3005,3116,3241,3456,3569",
+                        "endColumns": "110,124,113,112,117",
+                        "endOffsets": "3111,3236,3350,3564,3682"
                     }
                 }
             ]

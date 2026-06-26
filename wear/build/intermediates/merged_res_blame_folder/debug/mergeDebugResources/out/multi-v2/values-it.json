@@ -4,7 +4,7 @@
             "outputFile": "com.example.myapplication.wear-mergeDebugResources-21:/values-it/values-it.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\0ccead6375ef524f7bb7fc298c07936f\\transformed\\core-1.19.0\\res\\values-it\\values-it.xml",
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\2b3093b2f43df11bf9291c531719b112\\transformed\\core-1.19.0\\res\\values-it\\values-it.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\eed4d1fa6f1591c210292550f2f04828\\transformed\\wear-1.4.0\\res\\values-it\\values-it.xml",
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\02384b026396cbea94f109607050b2d7\\transformed\\wear-1.4.0\\res\\values-it\\values-it.xml",
                     "from": {
                         "startLines": "2,3,4,5,6",
                         "startColumns": "4,4,4,4,4",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\be5416f28d51c5598e9b5d4d41e22474\\transformed\\play-services-basement-18.4.0\\res\\values-it\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "131",
-                        "endOffsets": "326"
-                    },
-                    "to": {
-                        "startLines": "17",
-                        "startColumns": "4",
-                        "startOffsets": "1801",
-                        "endColumns": "135",
-                        "endOffsets": "1932"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\7984fca06b73ca85277716fe6cb9f27e\\transformed\\play-services-base-18.5.0\\res\\values-it\\values.xml",
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\35096c3c1619112a63429a1064ff994a\\transformed\\play-services-base-18.5.0\\res\\values-it\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,6 +52,23 @@
                         "startOffsets": "802,907,1058,1183,1291,1449,1577,1697,1937,2094,2201,2355,2482,2638,2819,2886,2947",
                         "endColumns": "104,150,124,107,157,127,119,103,156,106,153,126,155,180,66,60,76",
                         "endOffsets": "902,1053,1178,1286,1444,1572,1692,1796,2089,2196,2350,2477,2633,2814,2881,2942,3019"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\5af504b6040b1ae423cd9d2a32cd29b1\\transformed\\play-services-basement-18.4.0\\res\\values-it\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "131",
+                        "endOffsets": "326"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1801",
+                        "endColumns": "135",
+                        "endOffsets": "1932"
                     }
                 }
             ]

@@ -4,41 +4,7 @@
             "outputFile": "com.example.myapplication.wear-mergeDebugResources-21:/values-kk/values-kk.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\eed4d1fa6f1591c210292550f2f04828\\transformed\\wear-1.4.0\\res\\values-kk\\values-kk.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "55,169,289,404,518",
-                        "endColumns": "113,119,114,113,116",
-                        "endOffsets": "164,284,399,513,630"
-                    },
-                    "to": {
-                        "startLines": "27,28,29,31,32",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "2991,3105,3225,3441,3555",
-                        "endColumns": "113,119,114,113,116",
-                        "endOffsets": "3100,3220,3335,3550,3667"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\be5416f28d51c5598e9b5d4d41e22474\\transformed\\play-services-basement-18.4.0\\res\\values-kk\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "195",
-                        "endColumns": "159",
-                        "endOffsets": "354"
-                    },
-                    "to": {
-                        "startLines": "17",
-                        "startColumns": "4",
-                        "startOffsets": "1760",
-                        "endColumns": "163",
-                        "endOffsets": "1919"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\0ccead6375ef524f7bb7fc298c07936f\\transformed\\core-1.19.0\\res\\values-kk\\values-kk.xml",
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\2b3093b2f43df11bf9291c531719b112\\transformed\\core-1.19.0\\res\\values-kk\\values-kk.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -55,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\7984fca06b73ca85277716fe6cb9f27e\\transformed\\play-services-base-18.5.0\\res\\values-kk\\values.xml",
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\35096c3c1619112a63429a1064ff994a\\transformed\\play-services-base-18.5.0\\res\\values-kk\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,6 +35,40 @@
                         "startOffsets": "774,877,1030,1156,1262,1402,1528,1651,1924,2089,2195,2352,2481,2634,2791,2854,2913",
                         "endColumns": "102,152,125,105,139,125,122,108,164,105,156,128,152,156,62,58,77",
                         "endOffsets": "872,1025,1151,1257,1397,1523,1646,1755,2084,2190,2347,2476,2629,2786,2849,2908,2986"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\5af504b6040b1ae423cd9d2a32cd29b1\\transformed\\play-services-basement-18.4.0\\res\\values-kk\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "159",
+                        "endOffsets": "354"
+                    },
+                    "to": {
+                        "startLines": "17",
+                        "startColumns": "4",
+                        "startOffsets": "1760",
+                        "endColumns": "163",
+                        "endOffsets": "1919"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\fluis_nuf\\.gradle\\caches\\9.4.1\\transforms\\02384b026396cbea94f109607050b2d7\\transformed\\wear-1.4.0\\res\\values-kk\\values-kk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,169,289,404,518",
+                        "endColumns": "113,119,114,113,116",
+                        "endOffsets": "164,284,399,513,630"
+                    },
+                    "to": {
+                        "startLines": "27,28,29,31,32",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "2991,3105,3225,3441,3555",
+                        "endColumns": "113,119,114,113,116",
+                        "endOffsets": "3100,3220,3335,3550,3667"
                     }
                 }
             ]

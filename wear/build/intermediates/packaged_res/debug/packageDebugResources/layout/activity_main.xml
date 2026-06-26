@@ -13,11 +13,34 @@
         app:layout_boxedEdges="all">
 
         <TextView
+            android:id="@+id/tv_heart_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HR: --"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_accel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acc: --"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_gyro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gyro: --"
+            android:textSize="12sp" />
+
+        <TextView
             android:id="@+id/tv_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Waiting for sensors..."
-            android:textAlignment="center" />
+            android:text="Enviando..."
+            android:textColor="#4CAF50"
+            android:textSize="10sp"
+            android:layout_marginTop="8dp" />
 
     </LinearLayout>
 </BoxInsetLayout>

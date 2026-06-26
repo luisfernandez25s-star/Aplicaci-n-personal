@@ -1,4 +1,7 @@
 com.example.myapplication
+id tv_accel
+id tv_gyro
+id tv_heart_rate
 id tv_status
 layout activity_main
 string app_name
