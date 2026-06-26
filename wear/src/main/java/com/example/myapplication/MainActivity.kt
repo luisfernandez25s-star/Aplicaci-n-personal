@@ -24,12 +24,18 @@ class MainActivity : Activity(), SensorEventListener {
     private var gyroscope: Sensor? = null
 
     private lateinit var tvStatus: TextView
+    private lateinit var tvHeartRate: TextView
+    private lateinit var tvAccel: TextView
+    private lateinit var tvGyro: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         tvStatus = findViewById(R.id.tv_status)
+        tvHeartRate = findViewById(R.id.tv_heart_rate)
+        tvAccel = findViewById(R.id.tv_accel)
+        tvGyro = findViewById(R.id.tv_gyro)
 
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
         heartRateSensor = sensorManager.getDefaultSensor(Sensor.TYPE_HEART_RATE)
@@ -51,16 +57,28 @@ class MainActivity : Activity(), SensorEventListener {
     }
 
     override fun onSensorChanged(event: SensorEvent) {
-        val sensorName = when (event.sensor.type) {
-            Sensor.TYPE_HEART_RATE -> "Heart Rate"
-            Sensor.TYPE_ACCELEROMETER -> "Accelerometer"
-            Sensor.TYPE_GYROSCOPE -> "Gyroscope"
-            else -> "Unknown"
-        }
+        val sensorName: String
         val value = event.values[0]
-        sendDataToPhone(sensorName, value)
         
-        tvStatus.text = "Sending: $sensorName -> $value"
+        when (event.sensor.type) {
+            Sensor.TYPE_HEART_RATE -> {
+                sensorName = "Heart Rate"
+                tvHeartRate.text = "HR: $value"
+            }
+            Sensor.TYPE_ACCELEROMETER -> {
+                sensorName = "Accelerometer"
+                tvAccel.text = "Acc: $value"
+            }
+            Sensor.TYPE_GYROSCOPE -> {
+                sensorName = "Gyroscope"
+                tvGyro.text = "Gyro: $value"
+            }
+            else -> {
+                sensorName = "Unknown"
+            }
+        }
+        
+        sendDataToPhone(sensorName, value)
     }
 
     private fun sendDataToPhone(sensorName: String, value: Float) {
