@@ -45,8 +45,8 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Enviando dato de prueba a MongoDB...", Snackbar.LENGTH_LONG)
-                .setAction("Action", null)
+            Snackbar.make(view, getString(R.string.sending_test_data), Snackbar.LENGTH_LONG)
+                .setAction("Acción", null)
                 .setAnchorView(R.id.fab).show()
             
             // Prueba de inserción

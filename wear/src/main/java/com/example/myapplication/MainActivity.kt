@@ -62,19 +62,19 @@ class MainActivity : Activity(), SensorEventListener {
         
         when (event.sensor.type) {
             Sensor.TYPE_HEART_RATE -> {
-                sensorName = "Heart Rate"
-                tvHeartRate.text = "HR: $value"
+                sensorName = "Ritmo Cardiaco"
+                tvHeartRate.text = getString(R.string.hr_label, value.toString())
             }
             Sensor.TYPE_ACCELEROMETER -> {
-                sensorName = "Accelerometer"
-                tvAccel.text = "Acc: $value"
+                sensorName = "Acelerómetro"
+                tvAccel.text = getString(R.string.accel_label, value.toString())
             }
             Sensor.TYPE_GYROSCOPE -> {
-                sensorName = "Gyroscope"
-                tvGyro.text = "Gyro: $value"
+                sensorName = "Giroscopio"
+                tvGyro.text = getString(R.string.gyro_label, value.toString())
             }
             else -> {
-                sensorName = "Unknown"
+                sensorName = "Desconocido"
             }
         }
         

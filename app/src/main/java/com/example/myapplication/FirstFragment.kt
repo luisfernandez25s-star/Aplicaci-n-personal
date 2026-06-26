@@ -45,7 +45,7 @@ class FirstFragment : Fragment() {
                 val text = readings.joinToString("\n") { 
                     "${it.sensorName}: ${it.value} (${it.timestamp})" 
                 }
-                binding.textviewReadings.text = if (text.isEmpty()) "No readings yet" else text
+                binding.textviewReadings.text = if (text.isEmpty()) getString(R.string.no_readings) else text
             }
         }
     }
