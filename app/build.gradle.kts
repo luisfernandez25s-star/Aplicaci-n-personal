@@ -33,6 +33,12 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "META-INF/native-image/**"
+        }
+    }
 }
 
 dependencies {
@@ -51,6 +57,9 @@ dependencies {
 
     // Wearable Data Layer
     implementation(libs.play.services.wearable)
+
+    // MongoDB
+    implementation(libs.mongodb.driver.kotlin.coroutine)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)

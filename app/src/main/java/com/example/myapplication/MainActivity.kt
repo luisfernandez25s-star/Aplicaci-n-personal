@@ -13,7 +13,10 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import androidx.lifecycle.lifecycleScope
 import com.example.myapplication.databinding.ActivityMainBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,9 +45,19 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Enviando dato de prueba a MongoDB...", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
                 .setAnchorView(R.id.fab).show()
+            
+            // Prueba de inserción
+            lifecycleScope.launch(Dispatchers.IO) {
+                val reading = com.example.myapplication.data.SensorReading(
+                    sensorName = "Prueba Manual",
+                    value = 1.0f,
+                    timestamp = System.currentTimeMillis()
+                )
+                com.example.myapplication.data.MongoDBManager.getInstance().saveReading(reading)
+            }
         }
     }
 

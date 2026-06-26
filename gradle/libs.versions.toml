@@ -29,6 +29,7 @@ room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 play-services-wearable = { group = "com.google.android.gms", name = "play-services-wearable", version.ref = "playServicesWearable" }
+mongodb-driver-kotlin-coroutine = { group = "org.mongodb", name = "mongodb-driver-kotlin-coroutine", version = "5.8.0" }
 androidx-wear = { group = "androidx.wear", name = "wear", version = "1.4.0" }
 wear-compose-material = { group = "androidx.wear.compose", name = "compose-material", version = "1.6.2" }
 wear-compose-foundation = { group = "androidx.wear.compose", name = "compose-foundation", version = "1.6.2" }

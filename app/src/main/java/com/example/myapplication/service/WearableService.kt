@@ -34,9 +34,14 @@ class WearableService : WearableListenerService() {
 
     private fun saveToDatabase(name: String, value: Float, timestamp: Long) {
         serviceScope.launch {
-            val database = AppDatabase.getDatabase(applicationContext)
             val reading = SensorReading(sensorName = name, value = value, timestamp = timestamp)
+            
+            // Guardar localmente en Room
+            val database = AppDatabase.getDatabase(applicationContext)
             database.sensorDao().insert(reading)
+            
+            // Guardar en la nube (MongoDB)
+            com.example.myapplication.data.MongoDBManager.getInstance().saveReading(reading)
         }
     }
 
