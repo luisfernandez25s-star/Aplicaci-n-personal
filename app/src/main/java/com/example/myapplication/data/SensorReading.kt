@@ -8,5 +8,5 @@ data class SensorReading(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val sensorName: String,
     val value: Float,
-    val timestamp: Long
+    val timestamp: Long,
 )

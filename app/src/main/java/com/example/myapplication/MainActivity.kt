@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                 val reading = com.example.myapplication.data.SensorReading(
                     sensorName = "Prueba Manual",
                     value = 1.0f,
-                    timestamp = System.currentTimeMillis()
+                    timestamp = System.currentTimeMillis(),
                 )
                 com.example.myapplication.data.MongoDBManager.getInstance().saveReading(reading)
             }

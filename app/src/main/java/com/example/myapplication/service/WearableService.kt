@@ -1,5 +1,6 @@
 package com.example.myapplication.service
 
+import android.util.Log
 import com.example.myapplication.data.AppDatabase
 import com.example.myapplication.data.SensorReading
 import com.google.android.gms.wearable.DataEvent
@@ -17,6 +18,7 @@ class WearableService : WearableListenerService() {
     private val serviceScope = CoroutineScope(Dispatchers.IO + serviceJob)
 
     override fun onDataChanged(dataEvents: DataEventBuffer) {
+        Log.d("WearableService", "Evento de datos recibido: ${dataEvents.count} eventos")
         for (event in dataEvents) {
             if (event.type == DataEvent.TYPE_CHANGED) {
                 val path = event.dataItem.uri.path

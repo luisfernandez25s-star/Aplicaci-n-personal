@@ -2,7 +2,7 @@ package com.example.myapplication
 
 import android.Manifest
 import android.app.Activity
-import android.content.Context
+import android.graphics.Color
 import android.content.pm.PackageManager
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -37,7 +37,7 @@ class MainActivity : Activity(), SensorEventListener {
         tvAccel = findViewById(R.id.tv_accel)
         tvGyro = findViewById(R.id.tv_gyro)
 
-        sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+        sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
         heartRateSensor = sensorManager.getDefaultSensor(Sensor.TYPE_HEART_RATE)
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
         gyroscope = sensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE)
@@ -48,6 +48,22 @@ class MainActivity : Activity(), SensorEventListener {
         } else {
             registerSensors()
         }
+        checkNodes()
+    }
+
+    private fun checkNodes() {
+        Wearable.getNodeClient(this).connectedNodes
+            .addOnSuccessListener { nodes ->
+                if (nodes.isEmpty()) {
+                    Log.w("Wear", "No hay nodos conectados. ¿Están emparejados los emuladores?")
+                    tvStatus.text = getString(R.string.no_connection)
+                    tvStatus.setTextColor(Color.RED)
+                } else {
+                    Log.d("Wear", "Nodos conectados: ${nodes.size}")
+                    tvStatus.text = getString(R.string.connected)
+                    tvStatus.setTextColor(Color.GREEN)
+                }
+            }
     }
 
     private fun registerSensors() {

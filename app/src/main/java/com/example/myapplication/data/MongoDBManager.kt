@@ -1,11 +1,12 @@
 package com.example.myapplication.data
 
+import com.example.myapplication.BuildConfig
 import com.mongodb.kotlin.client.coroutine.MongoClient
 import org.bson.Document
 import android.util.Log
 
 class MongoDBManager {
-    private val connectionString = "mongodb+srv://luisg:G3r0n1m0202005@escuela.tjez8ct.mongodb.net/?appName=Escuela"
+    private val connectionString = BuildConfig.MONGODB_URI
     private val client = MongoClient.create(connectionString)
     private val database = client.getDatabase("Escuela")
     private val collection = database.getCollection<Document>("LecturasSensores")
